@@ -1,24 +1,20 @@
-# dmag5
+# thepainter
 
 Written and tested on Ubuntu 22.04.
 
-Creates a depth map (disparity map) from a stereo pair using local matching (guided filter).
+Simulates painting with oil. Input is a photograph. Output is (hopefully) a painterly rendering.
 
-This repo is an implementation of:
+I have combined elements from two academic papers to create my own Stroke-Based Rendering (SBR) software. I used "Painterly Rendering with Curved Brush Strokes of Multiple Sizes" by Aaron Hertzmann for the general framework but I didn't particularly like his curved brush strokes. I prefer straight strokes with an oil paint texture. So, I turned to "An Algorithm For Automatic Painterly Rendering Based On Local Source Image Approximation" by Michio Shiraishi and Yasushi Yamaguchi to handle the brush strokes.
 
-[Fast Cost-Volume Filtering for Visual Correspondence and Beyond by Christoph Rhemann, Asmaa Hosni, Michael Bleyer, Carsten Rother, and Margrit Gelautz](http://research.microsoft.com/pubs/147301/rhemannetal.pdf)
-
-To create the executable, compile the code in directory "dmag5" using "make -f Makefile_g/Makefile_O" and then go into the "main" directory and create the exec using "make".
+To create the executable, compile the code in directory "thepainter" using "make -f Makefile_g/Makefile_O" and then go into the "main" directory and create the exec using "make".
 
 Test cases are given in the "test" directory.
 
-Info about dmag5 (theory behind it and how to use it) can be found here:
+Info about thepainter (theory behind it and how to use it) can be found here:
 
-[Depth Map Automatic Generator 5 (DMAG5)](https://3dstereophoto.blogspot.com/2014/05/depth-map-automatic-generator-5-dmag5.html)
+[Non Photorealistic Rendering Software - The Painter](https://3dstereophoto.blogspot.com/2018/07/non-photorealistic-rendering-software.html)
 
-[Fast Cost Volume Filtering for Stereo Matching](https://3dstereophoto.blogspot.com/2014/05/fast-cost-volume-filtering-for-stereo.html)
-
-[Guided Image Filtering](https://3dstereophoto.blogspot.com/2014/05/guided-image-filtering.html)
+[Non Photorealistic Rendering - Stroke-Based Rendering (SBR)](https://3dstereophoto.blogspot.com/2018/05/non-photorealistic-rendering-stroke.html)
 
 Dependencies (check the Makefiles):
 
